@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    quotes = new Array
+    quotes[1] = "Gëzuar ditëlindjen!"
+    quotes[2] = "عيد ميلاد سعيد!"
+    quotes[3] = "መልካም ልደት"
+    quotes[4] = "Ad günün mübarək"
+    quotes[5] = " Breithlá shona"
+    quotes[6] = "Palju õnne sünnipäevaks"
+    quotes[7] = "Zorionak!"
+    quotes[8] = "З днём нараджэння!"
+    quotes[9] = "Честит рожден ден!"
+    quotes[0] = "Til hamingju með afmælið!"
+    var a = Math.random() + ""
+    var rand1 = a.charAt(5)
+    rand1 = 0
+    function myFunction() {
+      document.getElementById("demo").innerHTML = quotes[rand1];
+      rand1 += 1
+      if (rand1 == 10) {
+          rand1 = 0
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h1>My Web Page</h1>
+  <div align="center">
+  <p id="demo">A Paragraph.</p>
+</div>
+  <button type="button" onclick="myFunction()">点击这里</button>
+
+</body>
+
+</html>
